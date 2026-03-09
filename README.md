@@ -46,6 +46,24 @@ Before running the project make sure you have installed:
 
 ---
 # Build and run
+## Model Files Setup
+
+The MobileNet-SSD model files are included in this repository as compressed files:
+
+- `MobileNetSSD_deploy.caffemodel.zip`
+- `MobileNetSSD_deploy.prototxt.zip`
+
+Before running the application, you must extract these files.
+
+### Extract the files
+---
+#### macOS / Linux
+
+Run the following commands in the project directory:
+
+```bash
+unzip MobileNetSSD_deploy.caffemodel.zip
+unzip MobileNetSSD_deploy.prototxt.zip
 
 ## Install Dependencies
 ```console
