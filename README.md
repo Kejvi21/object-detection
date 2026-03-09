@@ -55,24 +55,22 @@ The MobileNet-SSD model files are included in this repository as compressed file
 
 Before running the application, you must extract these files.
 
-### Extract the files
----
 #### macOS / Linux
 
 Run the following commands in the project directory:
 
 ```bash
-unzip MobileNetSSD_deploy.caffemodel.zip
-unzip MobileNetSSD_deploy.prototxt.zip
-
+  unzip MobileNetSSD_deploy.caffemodel.zip
+  unzip MobileNetSSD_deploy.prototxt.zip
+```
 ## Install Dependencies
-```console
-pip install -r requirements.txt
+```bash
+  pip install -r requirements.txt
 ```
 
 ## Clone
-```console
-git clone https://github.com/Kejvi21/object-detection.git
+```bash
+  git clone https://github.com/Kejvi21/object-detection.git
 ```
 
 ---
@@ -80,23 +78,22 @@ git clone https://github.com/Kejvi21/object-detection.git
 ## Create a Virtual Environment (Recommended)
 
 ## Windows
-```console
-python -m venv venv
-venv\Scripts\activate
+```bash
+    venv\Scripts\activate
 ```
 ---
 ## macOS  / Linux
-```console
-python3 -m venv venv
-source venv/bin/activate
+```bash
+    python3 -m venv venv
+    source venv/bin/activate
 ```
 ---
 ## Run the Application
 
 Start the Flask server:
 
-```console
-python app.py
+```bash
+    python app.py
 ```
 ---
 
