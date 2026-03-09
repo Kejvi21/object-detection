@@ -45,8 +45,55 @@ Before running the project make sure you have installed:
 - Git
 
 ---
+# Build and run
 
-# Install Dependencies
+## Install Dependencies
 ```console
 pip install -r requirements.txt
 ```
+
+## Clone
+```console
+git clone https://github.com/Kejvi21/object-detection.git
+```
+
+---
+
+## Create a Virtual Environment (Recommended)
+
+## Windows
+```console
+python -m venv venv
+venv\Scripts\activate
+```
+---
+## macOS  / Linux
+```console
+python3 -m venv venv
+source venv/bin/activate
+```
+---
+## Run the Application
+
+Start the Flask server:
+
+```console
+python app.py
+```
+---
+
+## Open the Web App
+
+After running the server, open your browser and go to:
+http://127.0.0.1:5000 
+
+---
+
+# How It Works
+
+1. The user uploads an image through the web interface.
+2. Flask receives the image and saves it in `static/uploads`.
+3. The image is processed using **OpenCV and MobileNet-SSD**.
+4. The model detects persons in the image.
+5. Bounding boxes are drawn around detected persons.
+6. The processed image is displayed back in the browser.
